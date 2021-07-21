@@ -1,0 +1,12 @@
+name: drogue-influxdb-function
+namespace: ""
+runtime: rust
+image: quay.io/dejanb/drogue-influxdb-function:latest
+imageDigest: ""
+builder: quay.io/boson/faas-rust-builder:v0.8.4
+builderMap:
+  default: quay.io/boson/faas-rust-builder:v0.8.4
+volumes: []
+envs: []
+annotations: {}
+options: {}
