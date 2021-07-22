@@ -2,8 +2,8 @@ use actix_web::{web, App, HttpResponse, HttpServer};
 use env_logger as elog;
 
 mod config;
-mod handler;
 mod error;
+mod handler;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {

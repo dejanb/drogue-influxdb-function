@@ -1,12 +1,12 @@
-use crate::config::{Processor, Path};
+use crate::config::{Path, Processor};
 use crate::error::ServiceError;
 use actix_web::{web, HttpResponse};
-use cloudevents::{event::Data, Event};
-use influxdb::{InfluxDbWriteable, Timestamp, Type, WriteQuery};
-use std::collections::HashMap;
-use serde_json::Value;
 use chrono::Utc;
 use cloudevents::AttributesReader;
+use cloudevents::{event::Data, Event};
+use influxdb::{InfluxDbWriteable, Timestamp, Type, WriteQuery};
+use serde_json::Value;
+use std::collections::HashMap;
 
 // Implement your function's logic here
 pub async fn handle(
